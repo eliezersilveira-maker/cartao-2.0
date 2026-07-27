@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Flashcards</title>
+    <style>
+        /* Estilização geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Container que organiza os cartões lado a lado */
+        .container-cartoes {
+            display: flex;
+            flex-wrap: wrap;       /* Permite ir para a linha de baixo em telas menores */
+            gap: 20px;             /* Espaço entre os cartões */
+            justify-content: center;/* Centraliza os cartões na tela */
+        }
+
+        /* -------------------------------------------------- */
+        /* --- ESTILO BASE DO CARTÃO (Usado nos 3 cards) --- */
+        /* -------------------------------------------------- */
+        .cartao {
+            width: 280px;          /* Largura de cada cartão */
+            height: auto;          /* Altura ajustável ao conteúdo */
+            padding: 20px;         /* Espaço interno */
+            
+            background-color: #ffffff;
+            border: 2px solid #333333;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilo para as imagens dos cartões */
+        .cartao img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cartao h2 {
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            margin: 15px 0 10px 0;
+        }
+
+        .cartao p {
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Coleção de Flashcards</h1>
+
+    <div class="container-cartoes">
+
+        <div class="cartao">
+            <img src="https://via.placeholder.com/280x160" alt="Imagem do Flashcard 1">
+            <h2>Pergunta / Conceito 1</h2>
+            <p>Escreva aqui a resposta ou explicação do seu primeiro flashcard feito no papel.</p>
+        </div>
+
+        <div class="cartao">
+            <img src="https://via.placeholder.com/280x160" alt="Imagem do Flashcard 2">
+            <h2>Pergunta / Conceito 2</h2>
+            <p>Escreva aqui a resposta ou explicação do seu segundo flashcard feito no papel.</p>
+        </div>
+
+        <div class="cartao">
+            <img src="https://via.placeholder.com/280x160" alt="Imagem do Flashcard 3">
+            <h2>Pergunta / Conceito 3</h2>
+            <p>Escreva aqui a resposta ou explicação do seu terceiro flashcard feito no papel.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
